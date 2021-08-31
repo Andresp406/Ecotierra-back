@@ -1,0 +1,66 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class {{ class }} extends Model
+{
+    use HasFactory;
+
+        /**
+         * The table associated with the model.
+         *
+         * @var string
+         */
+        protected $table = '';
+
+        /**
+         * The primary key associated with the table.
+         *
+         * @var string
+         */
+        protected $primaryKey = 'id';
+
+        /**
+         * The "type" of the primary key ID.
+         *
+         * @var string
+         */
+        protected $keyType = 'int';
+
+        /**
+         * The attributes that are mass assignable.
+         *
+         * @var array
+         */
+        protected $fillable = [
+            'column1', 'column1',
+        ];
+
+        /**
+         * The attributes that should be cast to native types.
+         *
+         * @var array
+         */
+        protected $casts = [];
+
+        /**
+         * The accessors to append to the model's array form.
+         *
+         * @var array
+         */
+        protected $appends = [];
+
+        /**
+         * Indicates if the IDs are auto-incrementing.
+         *
+         * @var bool
+         */
+        public $incrementing = true;
+
+        //TODO Mutators models {{ class }}
+        //TODO Relations models {{ class }}
+        //TODO Scopes models {{ class }}
+}
